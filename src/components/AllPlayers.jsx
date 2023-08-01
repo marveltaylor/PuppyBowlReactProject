@@ -5,12 +5,21 @@ export default function AllPlayers () {
     const [players, setPlayers] = useState([]);
     
     useEffect (() => {
-
+        async function fetchPlayers () {
+            try {
+                const response = await fetch (`${APIURL}/players`);
+                const result = await response.json();
+                setPlayers();
+            } catch (error) {
+                console.log(error);
+            }
+        }
+        fetchPlayers();
     }, [])
 
     return (
         <>
-            <AllPlayers players={players} setPlayers={setPlayers}/>
+            
         </>
     );
 }
