@@ -7,9 +7,10 @@ function App() {
 
   return (
     <>
+    <NavBar />
     <Routes>
       <Route>
-        
+
       </Route>
     </Routes>
     </>
