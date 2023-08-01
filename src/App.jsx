@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-    <NavBar />
+    {/* <NavBar /> */}
     <Routes>
       <Route path ="/" element={<AllPlayers />}/>
       <Route path="/players/:id" element={<SinglePlayer />} />
