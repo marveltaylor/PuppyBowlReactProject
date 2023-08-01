@@ -10,7 +10,7 @@ export default function AllPlayers () {
 
     return (
         <>
-        <h>Hello</h>
+            <AllPlayers players={players} setPlayers={setPlayers}/>
         </>
     );
 }
