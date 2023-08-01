@@ -9,6 +9,7 @@ export default function NavBar () {
             gap: "8px",
         }}>
     
+        <Link to="/">To Home</Link>
         </NavBar>
         </>
     );
