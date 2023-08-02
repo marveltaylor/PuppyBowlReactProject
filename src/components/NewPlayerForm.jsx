@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function NewPlayerForm () {
     const [newPlayer, setNewPlayer] = useState("");
-    const [name, setName] = useState({});
+    // const [name, setName] = useState({});
     const [breed, setBreed] = useState ({});
     const [imageUrl, setImageUrl] = useState ({});
 
@@ -36,7 +36,7 @@ export default function NewPlayerForm () {
         <form method="post" onSubmit={handleSubmit}>
             <h3>Add a New Player!</h3>
             <label>Name: {""}
-                <input value={name} onChange={(e) => {setName(e.target.value);
+                <input value={newPlayer} onChange={(e) => {setNewPlayer(e.target.value);
                 }}>
                 </input>
             </label>
