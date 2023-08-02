@@ -28,7 +28,7 @@ export default function SinglePlayer () {
             <h4>{playerId.id}</h4>
             <h4>{playerId.breed}</h4>
             <h4>{playerId.status}</h4>
-            <img src={playerId.imageUrl} />
+            <img src={playerId.imageUrl}/>
         </div>
         </>
     );
