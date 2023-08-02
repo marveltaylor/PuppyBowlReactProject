@@ -24,7 +24,7 @@ export default function NewPlayerForm () {
             }
         };
         addNewPlayer();
-    })
+    }, []);
 
      function handleSubmit (e) {
          e.preventDefault();
