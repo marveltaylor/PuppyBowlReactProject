@@ -26,7 +26,7 @@ export default function AllPlayers () {
                     return (
                         <div key={player.id}>
                             <h4>Hello! I'm {player.name}!</h4>
-                            <button onClick={() => navigate(`/players/${player.id}`)}>Click Here</button>
+                            <button onClick={() => navigate(`/players/${player.id}`)}>See Details!</button>
                         </div>
                     )
                 })}
