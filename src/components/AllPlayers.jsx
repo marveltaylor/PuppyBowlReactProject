@@ -8,13 +8,24 @@ export default function AllPlayers () {
         console.log(ajaxHelpers);
         const testplayers = async () => {
             const playerArray = await ajaxHelpers()
-            // console.log(playerArray);
+            console.log(playerArray);
             setPlayers(playerArray);
         };
         testplayers();
+    
+        // async function fetchPlayers () {
+        //     try {
+        //         const response = await fetch (`${APIURL}/players`);
+        //         const result = await response.json();
+        //         setPlayers();
+        //     } catch (error) {
+        //         console.log(error);
+        //     }
+        // }
+        // fetchPlayers();
     }, [])
 
-    // console.log(players);
+    console.log(players);
     return (
         <>
             
