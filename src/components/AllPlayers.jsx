@@ -25,6 +25,7 @@ export default function AllPlayers () {
                     return (
                         <div>
                             <h4>Hello! I'm {player.name}!</h4>
+                            <button onClick={() => navigate(SinglePlayer)}></button>
                         </div>
                     )
                 })}
