@@ -32,7 +32,7 @@ export default function AllPlayers () {
                 {players.map((player) => {
                     return (
                         <div>
-                            <h4>{player.name}</h4>
+                            <h4>Hello! I'm {player.name}!</h4>
                         </div>
                     )
                 })}
