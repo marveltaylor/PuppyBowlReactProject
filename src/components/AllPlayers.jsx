@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import ajaxHelpers from '../API/ajaxHelpers'
 import { useState, useEffect } from 'react';
+import SinglePlayer from './SinglePlayer';
 
 export default function AllPlayers () {
     const [players, setPlayers] = useState([]);
@@ -23,9 +24,9 @@ export default function AllPlayers () {
             <div>
                 {players.map((player) => {
                     return (
-                        <div>
+                        <div key={player.id}>
                             <h4>Hello! I'm {player.name}!</h4>
-                            <button onClick={() => navigate(SinglePlayer)}></button>
+                            <button onClick={() => navigate(`/SinglePlayer/${player.id}`)}>Click Here</button>
                         </div>
                     )
                 })}
