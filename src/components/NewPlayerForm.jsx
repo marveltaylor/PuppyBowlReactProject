@@ -16,6 +16,7 @@ export default function NewPlayerForm () {
                 }}>
                 </input>
             </label>
+            <button type="submit">Submit</button>
         </form>
         </>
     );
