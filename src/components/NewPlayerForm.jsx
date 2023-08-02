@@ -23,6 +23,7 @@ export default function NewPlayerForm () {
                 console.error('Oops, something went wrong with adding that player!', err);
             }
         };
+        addNewPlayer();
     })
 
      function handleSubmit (e) {
