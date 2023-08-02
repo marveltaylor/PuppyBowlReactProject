@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 export default function SinglePlayer () {
+    let {id} = useParams();
+
     const [playerID, setPlayerId] = useState({})
     useEffect (() => {     
         const fetchSinglePlayer = async () => {
@@ -14,7 +16,7 @@ export default function SinglePlayer () {
             console.error("Uh oh, trouble fetching the player!", err);
         }
     };
-    
+    fetchSinglePlayer();
 
     }, []);
 
