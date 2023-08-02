@@ -26,6 +26,7 @@ export default function AllPlayers () {
                     return (
                         <div key={player.id}>
                             <h4>Hello! I'm {player.name}!</h4>
+                            <img src={player.imageUrl}/>
                             <button onClick={() => navigate(`/players/${player.id}`)}>See Details!</button>
                         </div>
                     )
