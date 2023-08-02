@@ -17,18 +17,18 @@ export default function NewPlayerForm () {
                     body: JSON.stringify(newPlayer),
                 });
                 const result = await response.json();
+                setNewPlayer(result.data.player)
                 if (result.error) throw result.error;
-                return result.data.newPlayer;
             } catch (err) {
                 console.error('Oops, something went wrong with adding that player!', err);
             }
         };
     })
 
-    // // function handleSubmit (e) {
-    // //     e.preventDefault();
-    // //     console.log(newPlayer);
-    // }
+     function handleSubmit (e) {
+         e.preventDefault();
+         console.log(newPlayer);
+    }
 
     return (
         <>
