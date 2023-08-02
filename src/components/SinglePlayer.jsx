@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import ajaxHelpers from '../API/ajaxHelpers';
 
 export default function SinglePlayer () {
     let {id} = useParams();

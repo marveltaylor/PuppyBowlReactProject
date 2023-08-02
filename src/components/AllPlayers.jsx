@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import ajaxHelpers from '../API/ajaxHelpers'
+import ajaxHelpers from '../API/ajaxHelpers';
 import { useState, useEffect } from 'react';
 import SinglePlayer from './SinglePlayer';
 
