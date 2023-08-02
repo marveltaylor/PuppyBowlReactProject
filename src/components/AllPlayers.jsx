@@ -12,17 +12,6 @@ export default function AllPlayers () {
             setPlayers(playerArray);
         };
         testplayers();
-    
-        // async function fetchPlayers () {
-        //     try {
-        //         const response = await fetch (`${APIURL}/players`);
-        //         const result = await response.json();
-        //         setPlayers();
-        //     } catch (error) {
-        //         console.log(error);
-        //     }
-        // }
-        // fetchPlayers();
     }, [])
 
     // console.log(players);
