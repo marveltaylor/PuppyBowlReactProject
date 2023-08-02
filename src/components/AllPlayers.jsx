@@ -1,8 +1,10 @@
+import { useNavigate } from 'react-router-dom';
 import ajaxHelpers from '../API/ajaxHelpers'
 import { useState, useEffect } from 'react';
 
 export default function AllPlayers () {
     const [players, setPlayers] = useState([]);
+    const navigate = useNavigate();
     
     useEffect (() => {
         console.log(ajaxHelpers);
