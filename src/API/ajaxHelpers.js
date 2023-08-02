@@ -1,4 +1,4 @@
-const APIURL = `https://fsa-puppy-bowl.herokuapp.com/api/${2302-acc-ct-web-pt-a}/`;
+const APIURL = `https://fsa-puppy-bowl.herokuapp.com/api/2302-acc-ct-web-a/`;
 
 const fetchAllPlayers = async () => {
     try {
@@ -10,3 +10,5 @@ const fetchAllPlayers = async () => {
         console.error("Uh oh, trouble fetching players!", err);
     }
 };
+
+export default fetchAllPlayers
