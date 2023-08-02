@@ -28,7 +28,15 @@ export default function AllPlayers () {
     console.log(players);
     return (
         <>
-            
+            <div>
+                {players.map((player) => {
+                    return (
+                        <div>
+                            <h4>{player.name}</h4>
+                        </div>
+                    )
+                })}
+            </div> 
         </>
     );
 }
