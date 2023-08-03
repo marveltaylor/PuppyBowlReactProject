@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 
 export default function NewPlayerForm () {
     const [newPlayer, setNewPlayer] = useState("");
-    // const [name, setName] = useState({});
-    const [breed, setBreed] = useState ({});
-    const [imageUrl, setImageUrl] = useState ({});
+    const [breed, setBreed] = useState ("");
+    const [imageUrl, setImageUrl] = useState ("");
 
     useEffect (() => {
         const addNewPlayer = async (newPlayer) => {
