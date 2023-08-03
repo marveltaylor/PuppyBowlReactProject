@@ -23,7 +23,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function SearchBar (id) {
+export default function SearchBar ({players, setPlayers}) {
 const [players, setPlayers] = useState([]);
 const [search, setSearch] = useState("");
 const navigate = useNavigate();
