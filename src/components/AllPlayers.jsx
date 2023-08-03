@@ -3,6 +3,7 @@ import ajaxHelpers from '../API/ajaxHelpers';
 import { useState, useEffect } from 'react';
 import SinglePlayer from './SinglePlayer';
 import NewPlayerForm from './NewPlayerForm';
+import SearchBar from './SearchBar';
 
 export default function AllPlayers () {
     const [players, setPlayers] = useState([]);
@@ -30,6 +31,7 @@ export default function AllPlayers () {
                     )
                 })}
                 <NewPlayerForm />
+                {/* <SearchBar /> */}
             </div> 
         </>
     );
