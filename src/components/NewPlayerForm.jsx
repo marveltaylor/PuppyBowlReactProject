@@ -36,7 +36,7 @@ export default function NewPlayerForm () {
     return (
         <>
         <form method="post" onSubmit={handleSubmit}>
-            <h3>Add a New Player!</h3>
+            <h2>Add a New Player!</h2>
             <label>Name: {""}
                 <input value={newPlayer} onChange={(e) => {setNewPlayer(e.target.value);
                 }}>

@@ -5,7 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import AllPlayers from './components/AllPlayers';
 import SinglePlayer from './components/SinglePlayer';
 import NewPlayerForm from './components/NewPlayerForm';
-import SearchBar from './components/SearchBar';
+// import SearchBar from './components/SearchBar';
 import DeleteButton from './components/DeleteButton';
 
 function App() {
@@ -18,6 +18,8 @@ function App() {
       <Route path ="/" element={<AllPlayers />}/>
       <Route path="/players/:id" element={<SinglePlayer />} />
       <Route path="/" element={<NewPlayerForm />} />
+      {/* <Route path="/" element={<DeleteButton />} />
+      <Route path="/players/:id" element={<SearchBar />} /> */}
     </Routes>
     </>
   );

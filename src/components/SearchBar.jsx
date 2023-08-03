@@ -1,14 +1,30 @@
-import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useState, useEffect } from "react";
+// import { useNavigate } from "react-router-dom";
 
-const [players, setPlayers] = useState([]);
-const [search, setSearch] = useState(null);
-const navigate = useNavigate();
+// export default function SearchBar (id) {
+// const [players, setPlayers] = useState([]);
+// const [search, setSearch] = useState("");
+// const navigate = useNavigate();
 
-export default function SearchBar () {
+//     navigate(`/view/${id}`);
 
-    return (
-        <>
-        </>
-    );
-};
+//     useEffect(() => {
+//         async function fetchAllPlayers() {
+//             const response = await apifetchAllPlayers();
+//             if (search) {
+//                 const filteredPlayers = response.filter((item) => item.name === search);
+//                 setPlayers(filteredPlayers);
+//             } else {
+//                 setPlayers(response);
+//             }
+//             console.log(response);
+//         }
+//         fetchAllPlayers();
+//     }, [search]);
+
+//     return (
+//         <>
+//         <SearchBar setSearch={setSearch} />
+//         </>
+//     );
+// };
