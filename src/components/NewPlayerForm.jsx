@@ -62,8 +62,7 @@ export default function NewPlayerForm () {
                     <option value="field">Field</option>
                 </select>
             </div>
-            
-            <button className="reset" type="reset">Reset Form</button>
+    
             <button className="submit" type="submit">Submit Form</button>
         </form>
         </>
