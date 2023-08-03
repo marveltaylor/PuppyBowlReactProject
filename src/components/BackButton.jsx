@@ -5,7 +5,7 @@ export default function BackButton () {
 
     return (
         <>
-        <button onClick={() => navigate(-1)}>Go Back!</button>
+        <button onClick={() => navigate(-1)}>Back to All Players!</button>
         </>
     );
 }
