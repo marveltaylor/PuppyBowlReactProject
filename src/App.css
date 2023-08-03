@@ -47,7 +47,9 @@ img {
 }
 
 .container {
-
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
 }
 
 .allPlayers {
@@ -57,4 +59,14 @@ img {
   align-items: center;
   background-color: #ABB8C3;
   border-radius: 16px;
+}
+
+.singlePlayer {
+  background-color: #ABB8C3;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+button {
+  margin: 10px;
 }
