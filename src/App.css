@@ -45,3 +45,16 @@ img {
   width: 150px;
   height: 190px;
 }
+
+.container {
+
+}
+
+.allPlayers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ABB8C3;
+  border-radius: 16px;
+}
