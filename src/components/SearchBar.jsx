@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 
 const SearchBar = ({ onSearch }) => {
+    const [searchPup, setSearchPup] = useState("");
     return (
         <input type="text" placeholder="Search" onChange={(e) => onSearch(e.target.value)}/>
     );
