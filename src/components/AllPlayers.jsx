@@ -9,23 +9,21 @@ export default function AllPlayers () {
     const navigate = useNavigate();
     
     useEffect (() => {
-        console.log(ajaxHelpers);
         const testplayers = async () => {
             const playerArray = await ajaxHelpers()
-            console.log(playerArray);
-            setPlayers(playerArray);
+            // console.log(playerArray);
+            setPlayers(playerArray.data.players);
         };
         testplayers();
     
-    }, [])
-
-    console.log(players);
+    }, [players])
+    
     return (
         <>
-            <div>
+            <div className="container">
                 {players.map((player) => {
                     return (
-                        <div key={player.id}>
+                        <div className="allPlayers" key={player.id}>
                             <h4>Hello! I'm {player.name}!</h4>
                             <img src={player.imageUrl}/>
                             <button onClick={() => navigate(`/players/${player.id}`)}>See Details!</button>

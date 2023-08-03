@@ -10,7 +10,7 @@ export default function SinglePlayer () {
     useEffect (() => {     
         const fetchSinglePlayer = async () => {
         try {
-            const response = await fetch (`https://fsa-puppy-bowl.herokuapp.com/api/COHORT-NAME/players/${id}`);
+            const response = await fetch (`https://fsa-puppy-bowl.herokuapp.com/api/2303-acc-ct-web-pt-a/players/${id}`);
             const result = await response.json();
             setPlayerId(result.data.player)
             if (result.error) throw result.error;

@@ -1,34 +1,38 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function NewPlayerForm () {
     const [newPlayer, setNewPlayer] = useState("");
     const [breed, setBreed] = useState ("");
     const [imageUrl, setImageUrl] = useState ("");
+    const [status, setStatus] = useState ("");
 
-    useEffect (() => {
-        const addNewPlayer = async (newPlayer) => {
+        async function handleSubmit(event) {
+            event.preventDefault();
             try {
-                const response = await fetch (`${APIURL}/players`, {
+                const response = await fetch (`https://fsa-puppy-bowl.herokuapp.com/api/2303-acc-ct-web-pt-a/players`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify(newPlayer),
+                    body: JSON.stringify({
+                        name: newPlayer,
+                        breed: breed,
+                        imageUrl: imageUrl,
+                        status: status,
+                    }),
                 });
                 const result = await response.json();
-                setNewPlayer(result.data.player)
+                console.log(result)
+                setNewPlayer("");
+                setBreed("");
+                setImageUrl("");
+                setStatus("");
+                // setNewPlayer(result.data.player)
                 if (result.error) throw result.error;
             } catch (err) {
                 console.error('Oops, something went wrong with adding that player!', err);
             }
         };
-        addNewPlayer();
-    }, []);
-
-     function handleSubmit (e) {
-         e.preventDefault();
-         console.log(newPlayer);
-    }
 
     return (
         <>
@@ -51,6 +55,14 @@ export default function NewPlayerForm () {
                 }}>
                 </input>
             </label>
+
+            <div>
+                <select value={status} onChange={(e) => {setStatus(e.target.value)}}>
+                    <option value="none">None</option>
+                    <option value="bench">Bench</option>
+                    <option value="field">Field</option>
+                </select>
+            </div>
             
             <button className="reset" type="reset">Reset Form</button>
             <button className="submit" type="submit">Submit Form</button>
