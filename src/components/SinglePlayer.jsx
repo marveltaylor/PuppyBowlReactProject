@@ -32,6 +32,7 @@ export default function SinglePlayer () {
             <br/>
             <button className="delete-button" onClick={() => delete(`/players/${playerId.id}`)}>Remove Pup</button>
             <button onClick={() => navigate(`/players/${playerId.id}`)}>Go Back!</button>
+            <DeleteButton />
         </div>
         </>
     );
