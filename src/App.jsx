@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import AllPlayers from './components/AllPlayers';
 import SinglePlayer from './components/SinglePlayer';
 import NewPlayerForm from './components/NewPlayerForm';
+import SearchBar from './components/SearchBar';
 
 function App() {
   
