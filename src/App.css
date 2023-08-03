@@ -47,6 +47,7 @@
 img {
   width: 150px;
   height: 190px;
+  border-radius: 5px;
 }
 
 .container {
