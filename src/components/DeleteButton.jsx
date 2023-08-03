@@ -1,9 +1,28 @@
 import { useParams } from "react-router-dom";
 
 export default function DeleteButton () {
+    const {id} = useParams();
+
+    const handleDelete = async (event) => {
+        event.preventDefault();
+        try {
+            const response = await fetch (`https://fsa-puppy-bowl.herokuapp.com/api/2303-acc-ct-web-pt-a/players/${id}`, {
+                method: "DELETE",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+            })
+            const result = await response.json();
+            console.log(result);
+            if (result.error) throw result.error;
+        } catch (err) {
+            console.error("Oops! Something went wrong with deleting that player!", err);
+        }
+    };
 
     return (
         <>
+        <button onClick={handleDelete}>Delete</button>
         </>
     );
 };
