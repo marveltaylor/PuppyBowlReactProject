@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import ajaxHelpers from '../API/ajaxHelpers';
 
 export default function SinglePlayer () {
     let {id} = useParams();
+    const navigate = useNavigate();
 
     const [playerId, setPlayerId] = useState({})
     useEffect (() => {     
@@ -29,6 +30,8 @@ export default function SinglePlayer () {
             <h4>{playerId.breed}</h4>
             <h4>{playerId.status}</h4>
             <img src={playerId.imageUrl}/>
+            <button className="delete-button" onClick={() => delete(`/players/${playerId.id}`)}>Remove Pup</button>
+            <button onClick={() => navigate(`/players/${player.id}`)}>Go Back!</button>
         </div>
         </>
     );
