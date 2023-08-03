@@ -26,9 +26,7 @@ export default function SinglePlayer () {
         <>
         <div>
             <h4>{playerId.name}</h4>
-            <h4>{playerId.id}</h4>
             <h4>{playerId.breed}</h4>
-            <h4>{playerId.status}</h4>
             <img src={playerId.imageUrl}/>
             <button className="delete-button" onClick={() => delete(`/players/${playerId.id}`)}>Remove Pup</button>
             <button onClick={() => navigate(`/players/${playerId.id}`)}>Go Back!</button>
