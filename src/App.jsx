@@ -6,6 +6,7 @@ import AllPlayers from './components/AllPlayers';
 import SinglePlayer from './components/SinglePlayer';
 import NewPlayerForm from './components/NewPlayerForm';
 import SearchBar from './components/SearchBar';
+import DeleteButton from './components/DeleteButton';
 
 function App() {
   
