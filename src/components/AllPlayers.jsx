@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import ajaxHelpers from '../API/ajaxHelpers';
 import { useState, useEffect } from 'react';
 import SinglePlayer from './SinglePlayer';
+import NewPlayerForm from './NewPlayerForm';
 
 export default function AllPlayers () {
     const [players, setPlayers] = useState([]);
@@ -31,6 +32,7 @@ export default function AllPlayers () {
                         </div>
                     )
                 })}
+                <NewPlayerForm />
             </div> 
         </>
     );
