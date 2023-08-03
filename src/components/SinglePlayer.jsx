@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import DeleteButton from "./DeleteButton";
 import ajaxHelpers from '../API/ajaxHelpers';
 
 export default function SinglePlayer () {
