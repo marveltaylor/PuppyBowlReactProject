@@ -23,7 +23,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function SearchBar ({players, setPlayers}) {
+export default function SearchBar (id) {
 const [players, setPlayers] = useState([]);
 const [search, setSearch] = useState("");
 const navigate = useNavigate();
@@ -32,7 +32,7 @@ const navigate = useNavigate();
 
     useEffect(() => {
         async function fetchAllPlayers() {
-            const response = await fetchAllPlayers(players);
+            const response = await fetchAllPlayers();
             if (search) {
                 const filteredPlayers = response.filter((item) => item.name === search);
                 setPlayers(filteredPlayers);
