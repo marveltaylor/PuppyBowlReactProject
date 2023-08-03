@@ -58,12 +58,12 @@ img {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #7a8efc;
+  background-color: #4964fc;
   border-radius: 16px;
 }
 
 .singlePlayer {
-  background-color: #7a8efc;
+  background-color: #4964fc;
   border-radius: 15px;
   padding: 15px;
 }
