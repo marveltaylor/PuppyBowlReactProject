@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import DeleteButton from "./DeleteButton";
 import ajaxHelpers from '../API/ajaxHelpers';
+import BackButton from "./BackButton";
 
 export default function SinglePlayer () {
     let {id} = useParams();
@@ -31,7 +32,7 @@ export default function SinglePlayer () {
             <img src={playerId.imageUrl}/>
             <br/>
             {/* <button className="delete-button" onClick={() => delete(`/players/${playerId.id}`)}>Remove Pup</button> */}
-            <button onClick={() => navigate(`/players/${playerId.id}`)}>Back to All Players!</button>
+            <BackButton />
             <DeleteButton />
         </div>
         </>
