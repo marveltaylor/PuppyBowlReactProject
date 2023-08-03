@@ -27,7 +27,6 @@ export default function NewPlayerForm () {
                 setBreed("");
                 setImageUrl("");
                 setStatus("");
-                // setNewPlayer(result.data.player)
                 if (result.error) throw result.error;
             } catch (err) {
                 console.error('Oops, something went wrong with adding that player!', err);
