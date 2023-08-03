@@ -54,7 +54,7 @@ export default function NewPlayerForm () {
             </label>
             
             <button type="reset">Reset Form</button>
-            <button type="submit">Submit Form</button>
+            <button className="submit" type="submit">Submit Form</button>
         </form>
         </>
     );
