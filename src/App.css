@@ -54,6 +54,7 @@ img {
   grid-template-columns: repeat(3,1fr);
   gap: 40px;
   align-items: center;
+  padding: 6px 20px;
 }
 
 .allPlayers {
