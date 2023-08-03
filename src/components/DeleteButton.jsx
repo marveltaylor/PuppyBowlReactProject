@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { handleDelete} from "../API/ajaxHelpers.js"
 
 export default function DeleteButton () {
     const {id} = useParams();
