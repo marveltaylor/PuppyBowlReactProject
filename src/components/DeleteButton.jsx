@@ -11,6 +11,7 @@ export default function DeleteButton () {
                 headers: {
                     "Content-Type": "application/json"
                 },
+                body: JSON.stringify(),
             })
             const result = await response.json();
             console.log(result);

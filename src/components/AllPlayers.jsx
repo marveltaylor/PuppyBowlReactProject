@@ -11,7 +11,6 @@ export default function AllPlayers () {
     useEffect (() => {
         const testplayers = async () => {
             const playerArray = await ajaxHelpers()
-            // console.log(playerArray);
             setPlayers(playerArray.data.players);
         };
         testplayers();
