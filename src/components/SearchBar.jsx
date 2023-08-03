@@ -32,7 +32,7 @@ const navigate = useNavigate();
 
     useEffect(() => {
         async function fetchAllPlayers() {
-            const response = await fetchAllPlayers();
+            const response = await fetchAllPlayers(players);
             if (search) {
                 const filteredPlayers = response.filter((item) => item.name === search);
                 setPlayers(filteredPlayers);
