@@ -22,7 +22,7 @@ export default function DeleteButton () {
 
     return (
         <>
-        <button onClick={handleDelete}>Delete</button>
+        <button onClick={handleDelete}>Remove Player</button>
         </>
     );
 };
