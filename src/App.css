@@ -37,6 +37,7 @@
 .card {
   padding: 2em;
   display: grid;
+  grid-template-rows: max-content 200px 1fr;
 }
 
 .read-the-docs {
