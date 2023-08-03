@@ -5,6 +5,7 @@ export default function BackButton () {
 
     return (
         <>
+        <button onClick={() => navigate(-1)}>Go Back!</button>
         </>
     );
 }
